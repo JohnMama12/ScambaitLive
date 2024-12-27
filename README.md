@@ -5,8 +5,9 @@ In order for this to work, install the following packages:
 ``
 pip install genai colorama
 ``
-Then you must a get free API key at https://aistudio.google.com and add a new enviorment variable named "GOOGLE_API_KEY" and set it to your API key.
+Then you must a get free a API key at https://aistudio.google.com and add a new enviorment variable named "GOOGLE_API_KEY" and set it to your API key.
 You must have Voicemeeter installed (Voice meeter bananna is enough) and route the software where you make your calls, or if you're using textnow or your Web Browser.
+ScambaitLive *doesn't* know what your audio devices are. You must set default audio devices in your settings, and it will automatically use the default device set.
 Make sure to go into rec.py and set both devices to the voicemeeter output of input and outputs:
 ```
 self.device1_index = self.get_device_index("VoiceMeeter Aux Output") 
